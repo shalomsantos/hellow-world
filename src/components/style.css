@@ -1,0 +1,87 @@
+.img {
+    width: 500px;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.nav-link:hover {
+    color: #37C6F4;
+}
+
+.btn-primary {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #37C6F4;
+    transition: 200ms;
+}
+
+.btn-primary:hover {
+    background: transparent;
+    border-color: #ffffff;
+}
+
+.btn-secondary {
+    background: #37C6F4;
+    border-color: #37C6F4;
+}
+
+.btn-secondary:hover {
+    background: #ffffff;
+    border-color: #37C6F4;
+    color: #37C6F4;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    border: none;
+    background: transparent;
+    border-radius: 2rem;
+    transition: 500ms;
+}
+
+.card:hover {
+    background: rgba(201, 201, 201, 0.226);
+    box-shadow: 0 0 0 0.2rem #37c5f473;
+}
+
+.but {
+    position: absolute;
+    bottom: -2.5rem;
+
+    display: none;
+    animation: But-in 300ms linear;
+}
+
+.card:hover .but {
+    display: block;
+}
+
+.btn {
+    border-radius: 2rem;
+    padding: 0.7rem 3rem;
+}
+
+#barra {
+    height: 100%;
+    width: 1px;
+    margin: 0 1rem;
+    background: #37C6F4;
+}
+
+@keyframes But-in {
+    0% {
+        opacity: 0%;
+        bottom: -1rem;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 100%;
+        bottom: -2.5rem;
+        transform: scale(1);
+    }
+}
