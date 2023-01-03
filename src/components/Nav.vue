@@ -9,7 +9,7 @@
           <div class="d-flex" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <router-link class="nav-link active" to="/about" aria-current="page">Produtos</router-link>
+                <router-link class="nav-link active" to="/login" aria-current="page">Produtos</router-link>
               </li>
               <div id="barra"></div>
               <li class="nav-item">

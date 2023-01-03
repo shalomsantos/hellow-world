@@ -47,8 +47,8 @@
     </main>
   </div>
 </template>
-<script>
 
+<script>
 import HelloWorld from '@/components/Planos.vue'
 import Nav from '@/components/Nav.vue'
 import Carousel from '@/components/Carousel.vue'
