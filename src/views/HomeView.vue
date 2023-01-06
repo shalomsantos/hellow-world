@@ -62,13 +62,8 @@ export default {
     Carousel,
     Planos
   },
-  data(){
-    message
-  },
   methods:{
-    message: function (e){
-      e.preventDefault();
-      debugger;
+    message: function (){
       conssole.log("hellow")
     }
   }

@@ -14,7 +14,6 @@
                 <h1>Titulo 1</h1>
                 <p>Some representative placeholder content for the first slide of the carousel.</p>
                 <p><a class="btn btn-lg btn-primary " href="#">Entrando na fila</a></p>
-                      {{ message }}
               </div>
             </div>
           </div>

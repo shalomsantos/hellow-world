@@ -1,18 +1,43 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div>
+    <router-view />
+    <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="endereco in enderecos">
+                    <td>{{ endereco.id }}</td>
+                    <td>{{ endereco.name }}</td>
+                    <td>{{ endereco.email }}</td>
+                </tr>
+            </tbody>
+      </table>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Endereco from './services/endereco';
 
+export default {
+  data(){
+        return{
+            enderecos: []
+        }
+    },
+  mounted(){
+    Endereco.listar().then(resposta => {
+      this.enderecos = resposta.data
+    })
+  }
+}
+</script>
+
+<style>
 nav {
   padding: 30px;
 }

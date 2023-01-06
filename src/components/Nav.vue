@@ -9,23 +9,23 @@
           <div class="d-flex" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <router-link class="nav-link active" to="/login" aria-current="page">Produtos</router-link>
+                <router-link class="nav-link active" to="/" aria-current="page">Produtos</router-link>
               </li>
               <div id="barra"></div>
               <li class="nav-item">
-                <router-link class="nav-link active" to="/about" aria-current="page">Planos</router-link>
+                <router-link class="nav-link active" to="/" aria-current="page">Planos</router-link>
               </li>
               <div id="barra"></div>
               <li class="nav-item">
-                <router-link class="nav-link active" to="/about" aria-current="page">Serviços</router-link>
+                <router-link class="nav-link active" to="/" aria-current="page">Serviços</router-link>
               </li>
               <div id="barra"></div>
               <li class="nav-item">
-                <router-link class="nav-link active" to="/about" aria-current="page">Quem somos</router-link>
+                <router-link class="nav-link active" to="/" aria-current="page">Quem somos</router-link>
               </li>
               <div id="barra"></div>
               <li class="nav-item">
-                <router-link class="nav-link active" to="/about" aria-current="page">Trabalhe conosco</router-link>
+                <router-link class="nav-link active" to="/" aria-current="page">Trabalhe conosco</router-link>
               </li>
             </ul>
           </div>

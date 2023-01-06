@@ -1,59 +1,91 @@
 <template>
-    <div class="central">
+    <form @submit.prevent="submit()">
         <div id="goBack">
-            <router-link to="/">
+            <router-link to="/home">
                 <i class="fa-solid fa-arrow-left"></i>
             </router-link>
         </div>
-        <h1>Login</h1>
+
+        <h1 id="LogPanel">Login</h1>
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">@</span>
-            <input type="text" v-model="user" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            <input
+                required
+                type="text"
+                placeholder="Username"
+                class="form-control"
+                v-model="form.usuario"
+                aria-label="Username"
+                aria-describedby="basic-addon1">
         </div>
+
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon1">#</span>
-            <input type="password" v-model="pass" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+            <input
+                required
+                type="password"
+                placeholder="Password"
+                class="form-control"
+                v-model="form.senha"
+                aria-label="Password" aria-describedby="basic-addon1">
         </div>
-        <button type="button" class="btn btn-outline-primary" v-on:click="verificacaoDeLogin">Entrar</button>
-        <button type="button" class="btn btn-outline-secondary">Cadastrar</button>
-    </div>
+
+        <!-- v-on:click="" -->
+        <button class="btn btn-outline-primary">
+            Entrar
+        </button>
+
+        <button class="btn btn-outline-secondary">
+            Cadastrar
+        </button>
+    </form>
 </template>
 
 <script>
+
 export default {
-    name: 'Login',
-    methods: {
-        verificacaoDeLogin: function () {
-            try {
-                if (this.user == 'admin') {
-                    if (this.pass == 'admin'){
-                        alert('Parabéns você logou corretamente!')
-                    }else{
-                        alert('Senha precisa ser igual ao nome')
-                    }
-                }else{
-                    alert('Usuário deve ser admin')
-                }
-            } catch (error) {
-                alert('Error, Catch acionado')
-                console.log(error)
-            }
+    nome: 'Login',
+    data: () => ({
+        form: {
+            usuario: '',
+            senha: ''
         }
+    }),
+    methods: {
+        submit(){
+            console.log(this.form)
+        },
+        // verificacaoDeLogin: function () {
+        //     try {
+        //         if (this.usuario == 'admin') {
+        //             if (this.senha == 'admin') {
+        //                 alert('Parabéns você logou corretamente!')
+        //             } else {
+        //                 alert('Senha precisa ser igual ao nome')
+        //             }
+        //         } else {
+        //             alert('Usuário deve ser admin')
+        //         }
+        //     } catch (error) {
+        //         alert('Error, Catch acionado')
+        //         console.log(error)
+        //     }
+        // }
     }
 }
 </script>
 
 <style scope>
-.central{
+form{
     display: flex;
     flex-direction: column;
     position: relative;
     
-    max-width: 22rem;
+    max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
 
-    padding: 4rem 3rem;
+    padding: 4rem 10rem 4rem 4rem;
     box-shadow: 0 0.5rem 1rem 0.3rem rgba(125, 125, 125, 0.467)
 }
 input{
@@ -67,7 +99,7 @@ button{
     width: 2.5rem;
     height: 2.5rem;
     top: 1rem;
-    right: 1rem;
+    left: 1rem;
     
     display: flex;
     justify-content: center;
@@ -79,5 +111,15 @@ button{
 }
 #goBack:hover{
     background: rgba(232, 232, 232, 0.533);
+}
+#LogPanel{
+    position: absolute;
+    top: 7rem;
+    right: -6.3rem;
+    z-index: -1;
+    
+    font-size: 8rem;
+    color: #2c3e5021;
+    transform: rotate(90deg);
 }
 </style>
