@@ -1,51 +1,60 @@
 <template>
-    <form @submit.prevent="submit()">
-        <div id="goBack">
-            <router-link to="/home">
-                <i class="fa-solid fa-arrow-left"></i>
-            </router-link>
-        </div>
+    <div>
+        <form @submit.prevent="submit()">
+            <div id="goBack">
+                <router-link to="/home">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </router-link>
+            </div>
 
-        <h1 id="LogPanel">Login</h1>
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">@</span>
-            <input
-                required
-                type="text"
-                placeholder="Username"
-                class="form-control"
-                v-model="form.usuario"
-                aria-label="Username"
-                aria-describedby="basic-addon1">
-        </div>
+            <h1 id="LogPanel">Login</h1>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input required type="text" placeholder="Username" class="form-control" v-model="form.usuario"
+                    aria-label="Username" aria-describedby="basic-addon1">
+            </div>
 
-        <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">#</span>
-            <input
-                required
-                type="password"
-                placeholder="Password"
-                class="form-control"
-                v-model="form.senha"
-                aria-label="Password" aria-describedby="basic-addon1">
-        </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">#</span>
+                <input required type="password" placeholder="Password" class="form-control" v-model="form.senha"
+                    aria-label="Password" aria-describedby="basic-addon1">
+            </div>
 
-        <!-- v-on:click="" -->
-        <button class="btn btn-outline-primary">
-            Entrar
-        </button>
+            <!-- v-on:click="" -->
+            <button class="btn btn-outline-primary">
+                Entrar
+            </button>
 
-        <button class="btn btn-outline-secondary">
-            Cadastrar
-        </button>
-    </form>
+            <button class="btn btn-outline-secondary">
+                Cadastrar
+            </button>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="endereco in enderecos">
+                    <td>{{ endereco.id }}</td>
+                    <td>{{ endereco.name }}</td>
+                    <td>{{ endereco.email }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </template>
 
 <script>
+import Endereco from '../services/endereco';
 
 export default {
     nome: 'Login',
     data: () => ({
+        enderecos: [],
         form: {
             usuario: '',
             senha: ''
@@ -54,24 +63,14 @@ export default {
     methods: {
         submit(){
             console.log(this.form)
-        },
-        // verificacaoDeLogin: function () {
-        //     try {
-        //         if (this.usuario == 'admin') {
-        //             if (this.senha == 'admin') {
-        //                 alert('Parabéns você logou corretamente!')
-        //             } else {
-        //                 alert('Senha precisa ser igual ao nome')
-        //             }
-        //         } else {
-        //             alert('Usuário deve ser admin')
-        //         }
-        //     } catch (error) {
-        //         alert('Error, Catch acionado')
-        //         console.log(error)
-        //     }
-        // }
-    }
+        }
+    },
+    mounted(){
+        Endereco.listar().then(resposta => {
+        console.log(resposta)
+        this.enderecos = resposta.data
+    })
+  }
 }
 </script>
 

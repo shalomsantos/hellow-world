@@ -1,40 +1,10 @@
 <template>
   <div>
     <router-view />
-    <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Nome</th>
-                    <th scope="col">E-mail</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="endereco in enderecos">
-                    <td>{{ endereco.id }}</td>
-                    <td>{{ endereco.name }}</td>
-                    <td>{{ endereco.email }}</td>
-                </tr>
-            </tbody>
-      </table>
   </div>
 </template>
 
 <script>
-import Endereco from './services/endereco';
-
-export default {
-  data(){
-        return{
-            enderecos: []
-        }
-    },
-  mounted(){
-    Endereco.listar().then(resposta => {
-      this.enderecos = resposta.data
-    })
-  }
-}
 </script>
 
 <style>
