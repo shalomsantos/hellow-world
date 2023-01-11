@@ -61,11 +61,6 @@ export default {
     Nav,
     Carousel,
     Planos
-  },
-  methods:{
-    message: function (){
-      conssole.log("hellow")
-    }
   }
 }
 </script>

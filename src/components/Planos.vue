@@ -1,5 +1,39 @@
 <template>
-  <div class="container marketing">
+  <div class="container">
+        <div class="cards">
+            <img src="../assets/product.png">
+            <div class="bodingCards">
+                <h1>produto a </h1>
+                <p>descrição do produto, descrição do produto segundo fluxo de Teste</p>
+                <button class="product">comprar</button>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../assets/product.png">
+            <div class="bodingCards">
+                <h1>produto b </h1>
+                <p>descrição do produto, descrição do produto segundo fluxo de Teste</p>
+                <button class="product">comprar</button>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../assets/product.png">
+            <div class="bodingCards">
+                <h1>produto c </h1>
+                <p>descrição do produto, descrição do produto segundo fluxo de Teste</p>
+                <button class="product">comprar</button>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="../assets/product.png">
+            <div class="bodingCards">
+                <h1>produto d </h1>
+                <p>descrição do produto, descrição do produto segundo fluxo de Teste</p>
+                <button class="product">comprar</button>
+            </div>
+        </div>
+  </div>
+  <!-- <div class="container marketing">
     <div class="row cards">
       <div class="col-lg-4 card">
         <img width="40%" src="../assets/product.png" />
@@ -64,9 +98,8 @@
       </div>
     </div>
     <hr class="featurette-divider">
-  </div>
+  </div> -->
 </template>
-
 <script>
 export default {
   name: 'Planos',
@@ -77,4 +110,54 @@ export default {
 </script>
 
 <style scoped>
+img{
+    width: 5rem;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.cards {
+  position: relative;
+  text-align: center;
+  margin: 0 1rem;
+  background: rgba(186, 186, 186, 0.286);
+  padding: 3rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: 300ms;
+}
+.cards:hover {
+  transform: scale(1.04);
+}
+.product{
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+}
+.bodingCards {
+  text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+  body {
+    height: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .cards {
+    max-width: 35rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 3rem;
+    margin: 1rem;
+  }
+}
 </style>
