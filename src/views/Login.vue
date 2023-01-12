@@ -19,14 +19,12 @@
                 <input type="password" id="senha" v-model="senha" name="senha" placeholder="Password" class="form-control"
                     aria-label="Password" aria-describedby="basic-addon1">
             </div>
-        
-            <!-- v-on:click="" -->
-        
+            
             <button class="btn btn-outline-primary" v-on:click="validantionLogin">
                 Entrar
             </button>
         
-            <button class="btn btn-outline-secondary">
+            <button class="btn btn-outline-secondary" v-on:click="cadastrarUser">
                 Cadastrar
             </button>
         </div>
@@ -72,6 +70,9 @@ export default {
             }else{
                 alert('nome deve se admin')
             }
+        },
+        cadastrarUser(){
+            this.$router.push('/cadastrar')
         }
     },
     mounted() {
@@ -84,7 +85,7 @@ export default {
 
 </script>
 
-<style scope>
+<style scoped>
 .central {
     display: flex;
     flex-direction: column;

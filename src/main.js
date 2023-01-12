@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import "./tools/boostrap/css/bootstrap.css"
-import "./tools/boostrap/css/carousel.css"
-import './components/style.css'
-import "./tools/boostrap/js/bootstrap.js"
+import './style.css'
+import "./tools/bootstrap/css/bootstrap.css"
+import "./tools/bootstrap/css/carousel.css"
+import "./tools/bootstrap/js/bootstrap.js"
 import "./tools/fontawesome/css/all.min.css"
 
 Vue.config.productionTip = false

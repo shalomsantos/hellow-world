@@ -11,19 +11,15 @@
               <li class="nav-item">
                 <router-link class="nav-link active" to="/" aria-current="page">Produtos</router-link>
               </li>
-              <div id="barra"></div>
               <li class="nav-item">
                 <router-link class="nav-link active" to="/" aria-current="page">Planos</router-link>
               </li>
-              <div id="barra"></div>
               <li class="nav-item">
                 <router-link class="nav-link active" to="/" aria-current="page">Serviços</router-link>
               </li>
-              <div id="barra"></div>
               <li class="nav-item">
                 <router-link class="nav-link active" to="/" aria-current="page">Quem somos</router-link>
               </li>
-              <div id="barra"></div>
               <li class="nav-item">
                 <router-link class="nav-link active" to="/" aria-current="page">Trabalhe conosco</router-link>
               </li>

@@ -20,6 +20,11 @@ const routes = [
     name: 'about',
     component: () => import('../views/AboutView.vue')
   },
+  {
+    path: '/cadastrar',
+    name: 'cadastrar',
+    component: () => import('../views/Cadastrar.vue')
+  },
 ]
 
 const router = new VueRouter({
