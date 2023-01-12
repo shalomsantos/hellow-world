@@ -8,23 +8,23 @@
 
       <Planos/>
 
-      <div class="demos">
+      <div class="demostration">
         <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow
-              your mind.</span></h2>
-          <p class="lead">
-            Some great placeholder content for the first featurette here. Imagine some exciting prose here.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img class="img" src="../assets/image1.jpg" />
-        </div>
+          <div class="col-md-7">
+            <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow
+                your mind.</span></h2>
+            <p class="lead">
+              Some great placeholder content for the first featurette here. Imagine some exciting prose here.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <img class="img" src="../assets/image1.jpg" />
+          </div>
         </div>
         <hr class="featurette-divider">
 
         <div class="row featurette">
-          <div class="col-md-7 order-md-2" style="text-align: right; width: 53%; margin-left: auto;">
+          <div class="col-md-7 order-md-2">
             <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good.
               <span class="text-muted">See for yourself.</span>
             </h2>
@@ -108,10 +108,12 @@ export default {
 }
 </script>
 <style scoped>
-.demos{
+.demostration{
   padding: 3.5rem 2rem;
 }
-
+.demostration .row{
+  align-items: center;
+}
 .img{
   width: 100%;
 }
