@@ -48,15 +48,3 @@
         </button>
     </div>
 </template>
-
-<script>
-export default {
-  name: 'Carousel',
-  props: {
-    msg: String
-  }
-}
-</script>
-
-<style scoped>
-</style>
