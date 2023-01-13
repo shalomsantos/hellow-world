@@ -11,10 +11,10 @@
       <div class="demostration">
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow
-                your mind.</span></h2>
+            <h2 class="featurette-heading fw-normal lh-1">
+              Título do primeiro featurette.<span class="text-muted"> Isso vai explodir sua mente.</span></h2>
             <p class="lead">
-              Some great placeholder content for the first featurette here. Imagine some exciting prose here.
+              Algum ótimo conteúdo de espaço reservado para o primeiro featurette aqui. Imagine uma prosa emocionante aqui.
             </p>
           </div>
           <div class="col-md-5">
@@ -25,11 +25,10 @@
 
         <div class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good.
-              <span class="text-muted">See for yourself.</span>
+            <h2 class="featurette-heading fw-normal lh-1">Oh sim, é tão bom.
+              <span class="text-muted"> Veja por si mesmo.</span>
             </h2>
-            <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this
-              layout would work with some actual real-world content in place.</p>
+            <p class="lead">Outro recurso? É claro. Mais conteúdo de espaço reservado aqui para dar uma ideia de como esse layout funcionaria com algum conteúdo real do mundo real.</p>
           </div>
           <div class="col-md-5 order-md-1">
             <img class="img" src="../assets/image2.jpg" />
@@ -39,12 +38,10 @@
 
         <div class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">And lastly, this one.
-              <span class="text-muted">Checkmate.</span>
+            <h2 class="featurette-heading fw-normal lh-1">E por último, este. 
+              <span class="text-muted">Xeque-mate.</span>
             </h2>
-            <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-              intended to be actually read, simply here to give you a better view of what this would look like with
-              someactual content. Your content.</p>
+            <p class="lead">E sim, este é o último bloco de conteúdo de espaço reservado representativo. Novamente, não é realmente para ser lido, apenas aqui para dar a você uma visão melhor de como isso ficaria com algum conteúdo real. Seu conteúdo.</p>
           </div>
           <div class="col-md-5">
             <img class="img" src="../assets/image3.jpg" />
@@ -57,28 +54,22 @@
         <div class="container marketing">
           <div class="row">
             <div class="col-lg-4">
-              <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
-                  class="text-muted">Checkmate.</span>
+              <h2 class="featurette-heading fw-normal lh-1">E por último, este. <span
+                  class="text-muted">Xeque-mate.</span>
               </h2>
-              <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-                intended to be actually read, simply here to give you a better view of what this would look like with some
-                actual content. Your content.</p>
+              <p class="lead">E sim, este é o último bloco de conteúdo de espaço reservado representativo. Novamente, não se destina a ser realmente lido, apenas aqui para dar a você uma visão melhor de como isso ficaria com algum conteúdo real. Seu conteúdo.</p>
             </div>
             <div class="col-lg-4">
-              <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
-                  class="text-muted">Checkmate.</span>
+              <h2 class="featurette-heading fw-normal lh-1">E por último, este. <span
+                  class="text-muted">Xeque-mate.</span>
               </h2>
-              <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-                intended to be actually read, simply here to give you a better view of what this would look like with some
-                actual content. Your content.</p>
+              <p class="lead">E sim, este é o último bloco de conteúdo de espaço reservado representativo. Novamente, não se destina a ser realmente lido, apenas aqui para dar a você uma visão melhor de como isso ficaria com algum conteúdo real. Seu conteúdo.</p>
             </div>
             <div class="col-lg-4">
-              <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
-                  class="text-muted">Checkmate.</span>
+              <h2 class="featurette-heading fw-normal lh-1">E por último, este. <span
+                  class="text-muted">Xeque-mate.</span>
               </h2>
-              <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really
-                intended to be actually read, simply here to give you a better view of what this would look like with some
-                actual content. Your content.</p>
+              <p class="lead">E sim, este é o último bloco de conteúdo de espaço reservado representativo. Novamente, não se destina a ser realmente lido, apenas aqui para dar a você uma visão melhor de como isso ficaria com algum conteúdo real. Seu conteúdo.</p>
             </div>
           </div>
         </div>

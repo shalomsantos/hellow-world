@@ -11,7 +11,7 @@
             <div class="container">
               <div class="carousel-caption text-start">
                 <h1>Titulo 1</h1>
-                <p>Some representative placeholder content for the first slide of the carousel.</p>
+                <p>Algum conteúdo de espaço reservado representativo para o primeiro slide do carrossel.</p>
                 <p><a class="btn btn-lg btn-outline-light " href="#">Entrando na fila</a></p>
               </div>
             </div>
@@ -21,7 +21,7 @@
             <div class="container">
               <div class="carousel-caption">
                 <h1>Titulo 2</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
+                <p>Algum conteúdo de espaço reservado representativo para o segundo slide do carrossel.</p>
                 <p><a class="btn btn-lg btn-outline-light" href="#">Saiba Mais</a></p>
               </div>
             </div>
@@ -31,7 +31,7 @@
             <div class="container">
               <div class="carousel-caption text-end">
                 <h1>Titulo 3</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
+                <p>Algum conteúdo de espaço reservado representativo para o segundo slide do carrossel.</p>
                 <p><a class="btn btn-lg btn-outline-light" href="#">Pesquise na Galeria</a></p>
               </div>
             </div>
