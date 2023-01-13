@@ -7,7 +7,7 @@
                 </router-link>
             </div>
         
-            <h1 id="LogPanel">Login</h1>
+            <h1>Login</h1>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">@</span>
                 <input type="text" id="usuario" v-model="usuario" name="name" placeholder="Username" class="form-control"
@@ -77,7 +77,6 @@ export default {
     },
     mounted() {
         Endereco.listar().then(resposta => {
-            //console.log(resposta)
             this.enderecos = resposta.data
         })
     }
@@ -87,14 +86,13 @@ export default {
 
 <style scoped>
 .central {
+    position: relative;
+    
     display: flex;
     flex-direction: column;
-    position: relative;
-
+    
     max-width: 30rem;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 1.5rem auto 1rem auto;
     border-radius: 0.5rem;
     padding: 4rem 10rem 4rem 4rem;
     box-shadow: 0 0.5rem 1rem 0.3rem rgba(125, 125, 125, 0.467)
@@ -128,9 +126,9 @@ button {
     background: rgba(232, 232, 232, 0.533);
 }
 
-#LogPanel {
+.central h1{
     position: absolute;
-    top: 7rem;
+    top: 5.5rem;
     right: -6.3rem;
     z-index: -1;
 
