@@ -57,7 +57,6 @@ img{
   transition: 200ms;
 }
 .card:hover{
-  box-shadow: 0 0 0 0.1rem rgba(178, 178, 178, 0.444);
   transform: translateY(-0.5rem);
 }
 .card:hover .card-body a{
